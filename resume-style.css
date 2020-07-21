@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: blue;
+}
+
+.main-container {
+    background-color:red;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 
+}
+
+ .main-container p {
+     grid-column: 2/-1;
+ }
