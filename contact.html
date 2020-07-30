@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <label for="email">Email</label><br>
+    <input type='email' id="email" name="email" required minlength="5" maxlength="50" required><br>
+    <label for="comments">Comments</label><br>
+    <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" minlength="20"></textarea>
+    <h2>How did you hear about me?</h2>
+    <input type="checkbox" id="classmate">
+    <label for="checkbox">Classmate</label>
+    <input type="checkbox" id="resume">
+    <label for="resume">Resume Submission</label>
+    <input type="checkbox" id="LinkedIn">
+    <label for="LinkedIn">LinkedIn</label>
+    <input type="checkbox" id="academy">
+    <label for="academy">Coding Academy</label>
+    <h2>Do you wish to be contacted back?</h2>
+    <input type="radio" id="yes" name="back" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="back" value="no">
+    <label for="no">No</label><br>
+    <label>Optinal birthday wish if you submit your birthday</label><br>
+    <input type="datetime" id="birthday" name="birthday"><br>
+    <input type="submit" name="submit" id="submit">
+    
+
+    <!--
+
+        for email that is required and validates for an actual email address
+        that has a placeholder "comments" and limits the user to 500 characters and a minimum of 20
+        A section of checkboxes that asks the user: "How did you hear about me?"
+            Classmate
+            Resume Submission
+            LinkedIn
+            Coding Academy Rec
+        
+        A section of radio buttons that asks if the user wants to be contacted back: Yes or No
+        Offer to give an optional Birthday Wish by submitting their birth date through a date input.
+        Remember your design must be designed for mobile, tablet, and laptop!
+        Remember to have a submit button and create a result.html to capture the values for now until we get to building servers that can receive and hold the data.
+        When you've finished create a pull request (PR) on the original repo and turn in the URL of that PR. -->
+    
+</body>
+</html>
