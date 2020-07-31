@@ -6,26 +6,31 @@
     <title>Contact Me</title>
 </head>
 <body>
+    <h1>Drop me a line</h1>
+    <label>First Name</label><br>
+    <input type="fname" name="" id=""><br>
+    <label>Last Name</label><br>
+    <input type="lname" name="" id=""><br>
     <label for="email">Email</label><br>
     <input type='email' id="email" name="email" required minlength="5" maxlength="50" required><br>
-    <label for="comments">Comments</label><br>
+    <label for="comments">Comments:</label><br>
     <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" minlength="20"></textarea>
-    <h2>How did you hear about me?</h2>
-    <input type="checkbox" id="classmate">
-    <label for="checkbox">Classmate</label>
-    <input type="checkbox" id="resume">
-    <label for="resume">Resume Submission</label>
-    <input type="checkbox" id="LinkedIn">
-    <label for="LinkedIn">LinkedIn</label>
-    <input type="checkbox" id="academy">
-    <label for="academy">Coding Academy</label>
-    <h2>Do you wish to be contacted back?</h2>
+    <h3>How did you hear about me?</h3>
+    <input type="checkbox" name="checkbox" id="classmate">
+    <label for="checkbox">Classmate</label><br>
+    <input type="checkbox" name="checkbox" id="resume">
+    <label for="resume">Resume Submission</label><br>
+    <input type="checkbox" name="checkbox" id="linkedin">
+    <label for="LinkedIn">LinkedIn</label><br>
+    <input type="checkbox" name="checkbox" id="academy">
+    <label for="academy">Coding Academy</label><br>
+    <h3>Do you wish to be contacted back?</h3>
     <input type="radio" id="yes" name="back" value="yes">
     <label for="yes">Yes</label>
     <input type="radio" id="no" name="back" value="no">
     <label for="no">No</label><br>
     <label>Optinal birthday wish if you submit your birthday</label><br>
-    <input type="datetime" id="birthday" name="birthday"><br>
+    <input type="date" id="birthday" name="birthday"><br>
     <input type="submit" name="submit" id="submit">
     
 

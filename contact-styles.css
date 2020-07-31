@@ -1,8 +1,30 @@
 body {
     background-color: coral;
+    text-align: center;
 }
 
 label {
     font-size: 15px;
-    margin: 5px;
+}
+
+input {
+    margin: 10px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+#linkedin, #resume, #academy, #classmate {
+    text-align: left;
+    margin: 0px;
+    width: 10px;
+}
+
+#yes, #no {
+    margin: 0;
+    width: 20px;
+}
+#submit {
+    width: 70px;
+    height: 50px;
+    border-radius: 25px;
 }
