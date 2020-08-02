@@ -5,33 +5,50 @@
     <link rel="stylesheet" href="./contact-styles.css">
     <title>Contact Me</title>
 </head>
+<header>
+    <nav>
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT ME</a>
+        <a href="https://medium.com/@willbmcclure">BLOG</a>
+        <a href="./projects.html">PROJECTS</a>
+        <a href="./contact.html">CONTACT ME</a>
+    </nav>
+</header>
 <body>
     <h1>Drop me a line</h1>
-    <label>First Name</label><br>
-    <input type="fname" name="" id=""><br>
-    <label>Last Name</label><br>
-    <input type="lname" name="" id=""><br>
+    <div>
+        <label>First Name</label><br>
+        <input type="fname" class="textinput" name="" id=""><br>
+    </div>
+    <div>
+        <label>Last Name</label><br>
+        <input type="lname" class="textinput" name="" id=""><br>
+    </div>
     <label for="email">Email</label><br>
-    <input type='email' id="email" name="email" required minlength="5" maxlength="50" required><br>
+    <input type='email' class="textinput" id="email" name="email" required minlength="5" maxlength="50" required><br>
     <label for="comments">Comments:</label><br>
-    <textarea name="comments" id="comments" placeholder="Comments" maxlength="500" minlength="20"></textarea>
-    <h3>How did you hear about me?</h3>
-    <input type="checkbox" name="checkbox" id="classmate">
-    <label for="checkbox">Classmate</label><br>
-    <input type="checkbox" name="checkbox" id="resume">
-    <label for="resume">Resume Submission</label><br>
-    <input type="checkbox" name="checkbox" id="linkedin">
-    <label for="LinkedIn">LinkedIn</label><br>
-    <input type="checkbox" name="checkbox" id="academy">
-    <label for="academy">Coding Academy</label><br>
-    <h3>Do you wish to be contacted back?</h3>
-    <input type="radio" id="yes" name="back" value="yes">
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="back" value="no">
-    <label for="no">No</label><br>
-    <label>Optinal birthday wish if you submit your birthday</label><br>
-    <input type="date" id="birthday" name="birthday"><br>
+    <textarea name="comments" id="comments" class="textinput" placeholder="Comments" maxlength="500" minlength="20"></textarea><br>
+    <label>How did you hear about me?</label>
+    <ul class="jordan">
+        <li><input type="checkbox">Classmate</li>
+        <li><input type="checkbox">Resume Submission</li>
+        <li><input type="checkbox" name="checkbox" id="linkedin">LinkedIn</li>
+        <li><input type="checkbox" name="checkbox" id="academy">Coding Academy</li>
+    </ul>
+    <label>Do you wish to be contacted back?</label>
+    <ul>
+        <li><input type="radio" id="yes" name="back" value="yes">Yes</li>
+        <li><input type="radio" id="no" name="back" value="no">No</li>
+    </ul><br>
+    <div class="handcrafted">
+    <label>Would you like a handcrafted birthhday wish each year?<br>If so, let me know your birthday below.</label><br><br>
+    <input type="date" id="birthday" name="birthday">
+    </div>
+    <br>
     <input type="submit" name="submit" id="submit">
+    <footer>
+
+    </footer>
     
 
     <!--
