@@ -1,35 +1,90 @@
+html, body {
+    width: 95vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 40px;
+    min-height: 100%;
+    margin-bottom: -40px;
+    width: 75%;
+    margin: 0 auto;  
   }
 
-  /* This is an element within an element selector */ 
-  nav > a {
-    height: 25px;
+nav > a {
+    height: 15px;
     color: rgb(73, 73, 172);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding: 8px;
+    padding: 0 4px 0 4px;
     background-color: transparent;
-    margin-top: 0 0 50px 0;
-    text-align: center;
     text-decoration: none;
   }
 
-  nav {
+nav {
+    padding: 5px 0 5px 0;
+    font-size: 10px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 30px 0 30px 0;
-  }
-  /* This is an ID selector */
-  #profile-pic {
-    width: auto;
-    height: auto;
+    justify-content: space-between;
+
   }
 
-  .twitter-follow-button {
-    font-size: 10px;
-    margin: 3% auto;
-  }
+h1 {
+  margin: 5px 0 5px 0;
+  } 
+
+textarea, .textinput {
+    width: 250px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: inset;
+    margin: 10px;
+}
+
+ul {
+   width: max-content;
+   margin: 0 auto;
+   list-style-type: none;
+   text-align: left;
+   padding-inline-start: 0;
+   padding: 10px 0 10px 0;
+}
+
+li {
+    padding: 2px 0 2px 0;
+}
+
+.textinput {
+    height: 25px;
+}
+
+label {
+    font-size: 20px;
+    padding: 4px 0 4px 0;
+}
+
+#yes, #no {
+    margin: 0;
+    width: 20px;
+}
+#submit {
+    width: 75px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer > a {
+  font-size: 24px;
+}

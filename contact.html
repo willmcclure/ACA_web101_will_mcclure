@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contact-styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact Me</title>
 </head>
 <header>
@@ -15,25 +16,26 @@
     </nav>
 </header>
 <body>
+    <form formaction="./result.html">
     <h1>Drop me a line</h1>
     <div>
         <label>First Name</label><br>
-        <input type="fname" class="textinput" name="" id=""><br>
+        <input type="fname" class="textinput" name="first" placeholder="first"><br>
     </div>
     <div>
         <label>Last Name</label><br>
-        <input type="lname" class="textinput" name="" id=""><br>
+        <input type="lname" class="textinput" name="last" placeholder="last"><br>
     </div>
     <label for="email">Email</label><br>
-    <input type='email' class="textinput" id="email" name="email" required minlength="5" maxlength="50" required><br>
+    <input type='email' class="textinput" name="email" id="email" placeholder="email" minlength="5" maxlength="50" required><br>
     <label for="comments">Comments:</label><br>
-    <textarea name="comments" id="comments" class="textinput" placeholder="Comments" maxlength="500" minlength="20"></textarea><br>
+    <textarea name="comments" id="comments" placeholder="comments" minlength="20" maxlength="500" rows="5" cols="50"></textarea><br>
     <label>How did you hear about me?</label>
-    <ul class="jordan">
-        <li><input type="checkbox">Classmate</li>
-        <li><input type="checkbox">Resume Submission</li>
-        <li><input type="checkbox" name="checkbox" id="linkedin">LinkedIn</li>
-        <li><input type="checkbox" name="checkbox" id="academy">Coding Academy</li>
+    <ul class="hear">
+        <li><input type="radio" name="checkbox" id="classmate">Classmate</li>
+        <li><input type="radio" name="checkbox" id="resume">Resume Submission</li>
+        <li><input type="radio" name="checkbox" id="linkedin">LinkedIn</li>
+        <li><input type="radio" name="checkbox" id="academy">Coding Academy</li>
     </ul>
     <label>Do you wish to be contacted back?</label>
     <ul>
@@ -41,31 +43,25 @@
         <li><input type="radio" id="no" name="back" value="no">No</li>
     </ul><br>
     <div class="handcrafted">
-    <label>Would you like a handcrafted birthhday wish each year?<br>If so, let me know your birthday below.</label><br><br>
-    <input type="date" id="birthday" name="birthday">
+    <label>Would you like a handcrafted birthhday wish each year?<br></label><br>
+    <input type="date" class="textinput" id="birthday" name="birthday">
     </div>
     <br>
     <input type="submit" name="submit" id="submit">
-    <footer>
-
-    </footer>
-    
-
-    <!--
-
-        for email that is required and validates for an actual email address
-        that has a placeholder "comments" and limits the user to 500 characters and a minimum of 20
-        A section of checkboxes that asks the user: "How did you hear about me?"
-            Classmate
-            Resume Submission
-            LinkedIn
-            Coding Academy Rec
-        
-        A section of radio buttons that asks if the user wants to be contacted back: Yes or No
-        Offer to give an optional Birthday Wish by submitting their birth date through a date input.
-        Remember your design must be designed for mobile, tablet, and laptop!
-        Remember to have a submit button and create a result.html to capture the values for now until we get to building servers that can receive and hold the data.
-        When you've finished create a pull request (PR) on the original repo and turn in the URL of that PR. -->
-    
+    <form></form>
 </body>
+<footer>
+    <a href="https://twitter.com/willbmcclure" >
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/willmcclure">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+     <a href="https://linkedin.com/in/willmcclure1">
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://willbmcclure@gmail.com">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+    </a>
+</footer>
 </html>
