@@ -107,6 +107,7 @@ h4 {
   }
 .software {
     display: none;
+    margin: 0 auto;
 }
 
 #hide {
