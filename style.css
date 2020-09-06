@@ -1,35 +1,29 @@
-html, body {
-    width: 95vw;
-    height: 100vh;
-    /* border: 1px solid red; */
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
     text-align: center;
     padding-bottom: 40px;
     min-height: 100%;
     margin-bottom: -40px;
-    width: 75%;
-    margin: 0 auto;  
+    width: 80%;
+    margin: 0 auto;
   }
 
 nav > a {
     height: 15px;
-    color: rgb(73, 73, 172);
+    color: purple;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 4px 0 4px;
+    padding: 4px;
     background-color: transparent;
     text-decoration: none;
   }
 
 nav {
     padding: 5px 0 5px 0;
-    font-size: 10px;
+    font-size: 14px;
+    text-align: left;
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
 h1 {
@@ -63,6 +57,10 @@ li {
     height: 25px;
 }
 
+.history {
+  margin: 0;
+}
+
 label {
     font-size: 20px;
     padding: 4px 0 4px 0;
@@ -79,12 +77,102 @@ label {
 }
 
 footer {
-  width: 100%;
-  height: 50px;
+  padding-top: 40px;
+  background-color: rgb(101, 101, 94);
+}
+
+.expand {
+  margin: 0 auto;
+  width: 200px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 footer > a {
   font-size: 24px;
+}
+
+.social {
+  height: 25px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > li {
+  margin: auto 0;
+}
+
+.email {
+  height: 24px;
+}
+
+.intro {
+  text-align: left;
+  font: bold;
+  margin: 70px 0 35px 0;
+  max-width: 760px;
+}
+
+.column {
+  /* border: 1px solid blue; */
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  /* border: 1px solid orange; */
+  width: 60%;
+  padding-right: 20px;
+}
+
+.right {
+  /* border: 1px solid green; */
+  width: 40%;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+}
+
+.me {
+  text-align: left;
+  width: 90%;
+}
+
+h5, h4, h6 {
+  margin: 3px 0 3px 0;
+}
+
+h6 {
+  font: lighter;
+}
+
+.brief {
+  margin: 8px 0 8px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+  
+  .column {
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .left, .right {
+    width: 90%;
+  }
+}
+
+h3 {
+  color: blue;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
